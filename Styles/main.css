@@ -2,43 +2,14 @@
     margin: 0;
     list-style-type: none;
 }
-
 #Desktop-Nav {
     display: none;
-    background-color: #dddddd;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
 }
-
-.Desktop-Nav-Links {
-    display: inline;
-    float: left;
-}
-
-.Desktop-Nav-Tags{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.Desktop-Nav-Tags:hover {
-    background-color: #111;
-}
-
-#Desktop-Nav-Active{
-    background-color: #04AA6D;
-}
-
 #Moblie-Nav {
     overflow: hidden;
     background-color: #333;
     position: relative;
 }
-
 #Moblie-Nav a {
     color: white;
     padding: 14px 16px;
@@ -46,7 +17,6 @@
     font-size: 17px;
     display: block;
 }
-
 #Moblie-Nav a.icon {
     background: black;
     display: block;
@@ -54,19 +24,16 @@
     right: 0;
     top: 0;
 }
-
 /* Add a grey background color on mouse-over */
 #Moblie-Nav a:hover {
   background-color: #ddd;
   color: black;
 }
-
 /* Style the active link (or home/logo) */
 .active {
   background-color: #04AA6D;
   color: white;
 }
-
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 0%;
@@ -80,7 +47,6 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
-
 .overlay-content {
     position: relative;
     top: 25%; /* 25% from the top */
@@ -88,7 +54,9 @@
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
-
+.overlay-content a{
+    margin-bottom: 40px;
+}
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -97,16 +65,54 @@
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
-
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
-  
+}  
   /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+@media only screen and (min-width: 375px) {
+    .overlay-content a{
+        margin-bottom: 40px;
+    }
+    .overlay a {
+        padding: 16px;
+  }
+@media only screen and (min-width: 767px) {
+    #Desktop-Nav {
+        display: block;
+        background-color: #dddddd;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    .Desktop-Nav-Links {
+        display: inline;
+        float: left;
+    }
+    .Desktop-Nav-Tags{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .Desktop-Nav-Tags:hover {
+        background-color: #111;
+    }
+    #Desktop-Nav-Active{
+        background-color: #04AA6D;
+    }
+    #Moblie-Nav{
+        display: none;
+    }
+    #myNav {
+        display: none;
+    }
 }
