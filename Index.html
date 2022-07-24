@@ -9,22 +9,33 @@
         <meta name="author" content="Jacqueline T McGough">
         <title>Home Page</title>
         <link rel="stylesheet" href="Styles/main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
         </header>
         <nav>
-            <div id="Moblie-Nav">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">List</a>
-            </div>
             <ul id="Desktop-Nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">List</a></li>
+                <li class="Desktop-Nav-Links"><a href="" id="Desktop-Nav-Active" class="Desktop-Nav-Tags">Home</a></li>
+                <li class="Desktop-Nav-Links"><a href="about.html" class="Desktop-Nav-Tags">About</a></li>
+                <li class="Desktop-Nav-Links"><a href="contact.html" class="Desktop-Nav-Tags">Contact</a></li>
             </ul>
+            <div id="Moblie-Nav">
+                <a href="#home" class="active">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </div>
+            </div>
         </nav>
         <main>
         </main>
