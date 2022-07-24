@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
+    list-style-type: none;
 }
 
-#DesktopMenu {
+#Desktop-Nav {
     display: none;
 }
