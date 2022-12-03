@@ -17,12 +17,14 @@ main {
 
 }
 
-.links
+.links {
 
-# link-side{
+}
+
+#link-side {
     width: 50%;
 }
 
-# pic-side{
+#pic-side{
     width: 50%;
 }
